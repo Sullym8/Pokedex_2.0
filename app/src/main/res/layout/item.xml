@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="14dp">
+
+    <TextView
+        android:id="@+id/pokemonName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="30sp"
+        tools:text="name"></TextView>
+
+    <TextView
+        android:id="@+id/type1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pokemonName"
+        android:background="@drawable/type_bg"
+        tools:text="type1"></TextView>
+
+    <TextView
+        android:id="@+id/type2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/type1"
+        app:layout_constraintTop_toBottomOf="@id/pokemonName"
+        android:background="@drawable/type_bg"
+        android:layout_marginLeft="4sp"
+        tools:text="type2"
+        ></TextView>
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_launcher_foreground">
+
+    </ImageView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
