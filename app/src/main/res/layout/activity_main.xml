@@ -6,26 +6,47 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <ImageView
+        android:layout_width="175dp"
+        android:layout_height="175dp"
+        android:layout_marginTop="-70dp"
+        android:layout_marginRight="-25dp"
+        android:src="@drawable/pokeball"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="?attr/colorSecondaryContainer" />
+
     <TextView
         android:id="@+id/title"
+        style="@style/text_app"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="PokeDex - With Scrolling!"
-        android:layout_marginTop="24dp"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:text="Pokédex "
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:fontFamily="sans-serif"
-        android:textFontWeight="1000"
-        android:textSize="24sp"
-        />
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/description"
+        style="@style/text_app_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/source_sans_pro"
+        android:text="The Pokédex is an invaluable tool to Trainers. It gives information about all Pokémon in the world."
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title"></TextView>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/title"
+        android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginTop="8sp">
+        app:layout_constraintTop_toBottomOf="@id/description">
+
     </androidx.recyclerview.widget.RecyclerView>
 </androidx.constraintlayout.widget.ConstraintLayout>

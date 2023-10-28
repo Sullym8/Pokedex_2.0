@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="item">
+        <item name="android:background">@drawable/item_bg</item>
+        <item name="android:textColor">@color/on_secondary_container_red</item>
+    </style>
+</resources>

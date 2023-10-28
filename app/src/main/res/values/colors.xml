@@ -2,4 +2,27 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="primary_red">#006e2a</color>
+    <color name="on_primary_red">#ffffff</color>
+    <color name="primary_container_red">#69ff87</color>
+    <color name="on_primary_container_red">#002108</color>
+    <color name="secondary_red">#516350</color>
+    <color name="on_secondary_red">#ffffff</color>
+    <color name="secondary_container_red">#d4e8d0</color>
+    <color name="on_secondary_container_red">#0f1f11</color>
+    <color name="bg_surface">#fcfdf7</color>
+    <color name="on_bg_surface">#1a1c19</color>
+
+
+    <color name="primary_red_d">#00e561</color>
+    <color name="on_primary_red_d">#003912</color>
+    <color name="primary_container_red_d">#00531e</color>
+    <color name="on_primary_container_red_d">#69ff87</color>
+    <color name="secondary_red_d">#b8ccb5</color>
+    <color name="on_secondary_red_d">#243424</color>
+    <color name="secondary_container_red_d">#1C261D</color>
+    <color name="on_secondary_container_red_d">#d4e8d0</color>
+    <color name="bg_surface_d">#1a1c19</color>
+    <color name="on_bg_surface_d">#e2e3dd</color>
+
 </resources>

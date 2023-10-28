@@ -9,7 +9,7 @@ android {
 
     defaultConfig {
         applicationId = "com.example.pokedex2"
-        minSdk = 24
+        minSdk = 28
         targetSdk = 33
         versionCode = 1
         versionName = "1.0"

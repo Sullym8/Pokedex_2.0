@@ -1,8 +1,10 @@
 package com.example.pokedex2
 
+import android.graphics.Rect
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.view.View
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -50,7 +52,6 @@ class MainActivity : AppCompatActivity() {
                     val adapter = PokemonAdapter(pokemonUrlList)
                     recyclerView.adapter = adapter
                     recyclerView.layoutManager = LinearLayoutManager(this@MainActivity)
-                    recyclerView.addItemDecoration(DividerItemDecoration(this@MainActivity, LinearLayoutManager.VERTICAL))
                 }
             }
         }]
@@ -58,6 +59,22 @@ class MainActivity : AppCompatActivity() {
     }
 }
 
+class SpacesItemDecoration(val space: Int): RecyclerView.ItemDecoration() {
+
+    override fun getItemOffsets(
+        outRect: Rect,
+        view: View,
+        parent: RecyclerView,
+        state: RecyclerView.State
+    ) {
+        outRect.bottom = space;
+        outRect.left = space
+        outRect.right = space
+
+
+    }
+
+}
 data class Pokemon(val name: String,
                    val type1: String,
                    val type2:String?,

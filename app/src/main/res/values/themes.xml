@@ -1,9 +1,55 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <style name="Base.Theme.PokeDex2" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/primary_red</item>
+        <item name="colorOnPrimary">@color/on_primary_red</item>
+        <item name="colorPrimaryContainer">@color/primary_container_red</item>
+        <item name="colorOnPrimaryContainer">@color/on_primary_container_red</item>
+        <item name="colorSecondary">@color/secondary_red</item>
+        <item name="colorOnSecondary">@color/on_secondary_red</item>
+        <item name="colorSecondaryContainer">@color/secondary_container_red</item>
+        <item name="colorOnSecondaryContainer">@color/on_secondary_container_red</item>
+        <item name="android:colorBackground">@color/bg_surface</item>
+        <item name="colorSurface">@color/bg_surface</item>
+        <item name="colorOnBackground">@color/on_bg_surface</item>
+        <item name="colorOnSurface">@color/on_bg_surface</item>
+    </style>
+    <style name="Theme.PokeDex2" parent="Base.Theme.PokeDex2" />
+    
+    <style name="list_item">
+        <item name="android:background">@drawable/item_bg</item>
+        <item name="android:textColor">?attr/colorOnPrimaryContainer</item>
+        <item name="android:padding">14sp</item>
+        <item name="android:fontFamily">@font/source_sans_pro</item>
     </style>
 
-    <style name="Theme.PokeDex2" parent="Base.Theme.PokeDex2" />
+    <style name="type_item">
+        <item name="android:background">@drawable/type_bg</item>
+        <item name="android:textColor">?attr/colorOnPrimary</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/source_sans_pro</item>
+    </style>
+
+    <style name="text_list">
+        <item name="android:textColor">?attr/colorOnPrimaryContainer</item>
+        <item name="android:textSize">30sp</item>
+<!--        <item name="android:textStyle">bold</item>-->
+        <item name="android:fontFamily">@font/playfair_display</item>
+    </style>
+
+    <style name="text_app">
+        <item name="android:textSize">50sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">?attr/colorOnBackground</item>
+        <item name="android:fontFamily">@font/playfair_display_bold</item>
+
+    </style>
+
+    <style name="text_app_desc">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">?attr/colorOnBackground</item>
+        <item name="android:fontFamily">@font/source_sans_pro</item>
+
+    </style>
+
 </resources>
